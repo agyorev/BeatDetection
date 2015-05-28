@@ -5,6 +5,12 @@
         <title>song beats per minute detection</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <style>
+            .hidden {
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <div class="container">
@@ -45,20 +51,35 @@
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-8">
-                    <div id="result">
-                        <a class="btn btn-success" href="#">
-                            <i class="fa fa-play-circle-o"></i>
-                            Play Preview
-                        </a>
-                        <div id="song-bpm"></div>
-                        <audio id="audio"></audio>
+                    <div id="result" class="hidden">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <span class="label label-info">Artist</span>&nbsp;<span id="artist"></span>
+                                    <br />
+                                    <span class="label label-info">Track</span>&nbsp;<span id="track"></span>
+                                    <br />
+                                    <span class="label label-info">bpm</span>&nbsp;<span id="bpm"></span>
+                                    <br />
+                                    <span id="preview" class="hidden"></span>
+                                    <br />
+                                    <a id="play" class="btn btn-success" href="#">
+                                        <i class="fa fa-play-circle-o"></i>
+                                        Play Preview
+                                    </a>
+                                    <audio id="audio"></audio>
+                                </div>
+                                <div class="col-md-2">
+                                    <img id="album-cover" src="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-2"></div>
             </div>
         </div>
 
-
-        <script src="script.js"></script>
+        <script type="text/javascript" src="./public/js/script.js"></script>
     </body>
 </html>
