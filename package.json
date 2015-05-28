@@ -1,0 +1,36 @@
+{
+  "name": "BeatDetection",
+  "version": "1.0.0",
+  "description": "Identify the beat per minute of a song.",
+  "main": "app.coffee",
+  "scripts": {
+    "start": "coffee -w app.coffee",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:agyorev/BeatDetection.git"
+  },
+  "keywords": [
+    "webaudio",
+    "api",
+    "beat",
+    "detection",
+    "beats",
+    "per",
+    "minute",
+    "coffeescript"
+  ],
+  "author": "Aleksandar Gyorev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agyorev/BeatDetection/issues"
+  },
+  "homepage": "https://github.com/agyorev/BeatDetection",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "coffee-script": "^1.9.2",
+    "express": "^4.12.4",
+    "request": "^2.55.0"
+  }
+}

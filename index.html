@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>song beats per minute detection</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="page-header">
+                        <h1>
+                            song beats per minute detection
+                        </h1>
+                        <small>
+                            Source: 
+                            <a href="http://tech.beatport.com/2014/web-audio/beat-detection-using-web-audio/" target="_blank">
+                                http://tech.beatport.com/2014/web-audio/beat-detection-using-web-audio/
+                            </a>
+                        </small>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+
+                    <form role="search" action="/query" method="post">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for a song..." id="query" name="query" value="">
+                            <div class="input-group-btn">
+                                <button type="submit" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <div id="result">
+                        <a class="btn btn-success" href="#">
+                            <i class="fa fa-play-circle-o"></i>
+                            Play Preview
+                        </a>
+                        <div id="song-bpm"></div>
+                        <audio id="audio"></audio>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
