@@ -25,10 +25,12 @@ app.post '/', (req, res) ->
     url = 'https://api.spotify.com/v1/search?type=track&q=' + query.split(' ').join('+')
     request.get url, (error, response, body) ->
         if error
-            return console.log 'Error: ', error
+            console.log 'Error: ', error
+            return res.send $.html()
 
         if response.statusCode isnt 200
-            return console.log 'Invalid status code: ', response.statusCode
+            console.log 'Invalid status code: ', response.statusCode
+            return res.send $.html()
 
         data = JSON.parse body
 
