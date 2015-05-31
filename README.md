@@ -11,3 +11,6 @@ There is also a `Procfile` for easy [heroku](https://dashboard.heroku.com/) depl
 
 * result
 ![result](img/result.png)
+
+#### Remarks
+Due to the usage of the WebAudio API the beat detection (audio processing) seems not to be working under Safari. If you want to be on the safe side try opening it in Chrome.
